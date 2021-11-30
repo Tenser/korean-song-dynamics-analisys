@@ -39,7 +39,7 @@ def data_to_num(data, genre_dict):
 np.set_printoptions(formatter={'float_kind': lambda x: "{0:0.1f}".format(x)})
 data = np.load('data/songs_preprocessed.npy')
 genre_dict = get_dict(data)
-#print(genre_dict)
+print(genre_dict)
 res = data_to_num(data, genre_dict)
 print(res.shape)
 print(res)
